@@ -1,0 +1,31 @@
+{
+  "name": "ifeoma_dad_burial",
+  "version": "1.0.0",
+  "description": "Burial videos",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gcamon/ifeoma-backend.git"
+  },
+  "keywords": [
+    "burial",
+    "video",
+    "ceremony"
+  ],
+  "author": "Ede Obinna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gcamon/ifeoma-backend/issues"
+  },
+  "homepage": "https://github.com/gcamon/ifeoma-backend#readme",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.6.1",
+    "multer": "^1.4.5-lts.1"
+  }
+}
