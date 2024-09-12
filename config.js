@@ -2,13 +2,14 @@
 
 var pathExp = require("path");
 var multer = require('multer');
+var express = require('express')
 
 var bodyParser = require('body-parser');
 
 module.exports = function(app) {
 
 	//app.use('/assets',express.static(__dirname + '/public'));
-	app.use(express.static(path.join(__dirname, 'public')));
+	app.use(express.static(pathExp.join(__dirname, 'public')));
 	
 	app.use(bodyParser.urlencoded({ extended: true,limit: '50mb'}));
 	
