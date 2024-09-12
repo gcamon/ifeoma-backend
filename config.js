@@ -7,7 +7,6 @@ var express = require('express')
 var bodyParser = require('body-parser');
 
 module.exports = function(app) {
-
 	//app.use('/assets',express.static(__dirname + '/public'));
 	app.use(express.static(pathExp.join(__dirname, 'public')));
 	
@@ -15,13 +14,12 @@ module.exports = function(app) {
 	
 	app.use(bodyParser.json({limit: '50mb'}));
 
-
 	var storage = multer.diskStorage({
 	  destination: function (req, file, cb) {
 	    cb(null, './videos')
 	  },
 	  filename: function (req, file, cb) {
-	    cb(null, Date.now() + pathExp.extname(file.originalname)) 
+	    cb(null, Date.now() + pathExp.extname(file.originalname));
 	  }
 	});
 
